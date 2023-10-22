@@ -15,9 +15,10 @@ Once downloaded, move the contents to your Desktop.
 ## Media File Setup
 Place your desired .mp4 video file into the program's directory.
 In case multiple mp4 files are present, the program will select and play only one of them.
-Time Configuration 
 
-## Set start and stop time
+## Time Configuration 
+
+1. Set start and stop time
 The program will determine the video's start and end times based on your input.
 #### example of the time.txt file
 ```
@@ -56,7 +57,7 @@ https://github.com/isankadn/windows-auto-video-play.git
 複数のmp4ファイルが存在する場合、プログラムはその中の1つだけを選択して再生します。
 
 ## 時間の設定
-開始と終了時刻の設定
+1. 開始と終了時刻の設定
 プログラムは、入力に基づいてビデオの開始時刻と終了時刻を決定します。
 
 #### time.txtファイルの例
