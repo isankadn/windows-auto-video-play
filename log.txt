@@ -1,0 +1,10 @@
+
+TaskPath                                       TaskName                          State     
+--------                                       --------                          -----     
+\                                              RunMediaTask                      Ready     
+\                                              CloseMediaPlayerTask              Ready     
+
+
+Actions performed at 10/22/2023 15:24:14
+Actions performed at 10/22/2023 15:27:04
+Actions performed at 10/22/2023 15:30:14
