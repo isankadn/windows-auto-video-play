@@ -1,2 +1,3 @@
 @echo off
-powershell -ExecutionPolicy Bypass -File "C:\Users\admin\Desktop\isanka\start_player_ps.ps1"
+set USERPATH=C:\Users\%USERNAME%\Desktop\windows-auto-video-play\start_player_ps.ps1
+powershell -ExecutionPolicy Bypass -File "%USERPATH%"
