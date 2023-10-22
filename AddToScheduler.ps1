@@ -22,14 +22,14 @@ if (Get-ScheduledTask -TaskName $closeMediaTaskName -ErrorAction SilentlyContinu
 
 # Define and Register RunMediaTask using the time from the file
 $currentUser = $env:USERNAME
-$runMediaPath = "C:\Users\$currentUser\Desktop\windows-auto-video-play\RunMedia.bat"
+$runMediaPath = "C:\Users\$currentUser\Desktop\windows-auto-video-play-main\RunMedia.bat"
 $runMediaAction = New-ScheduledTaskAction -Execute $runMediaPath
 $runMediaTrigger = New-ScheduledTaskTrigger -Daily -At $runMediaTime
 Register-ScheduledTask -Action $runMediaAction -Trigger $runMediaTrigger -TaskName $runMediaTaskName -Description "Task to run media player"
 
 # Define and Register CloseMediaPlayerTask using the time from the file
 $currentUser = $env:USERNAME
-$closeMediaPath = "C:\Users\$currentUser\Desktop\windows-auto-video-play\CloseMedia.bat"
+$closeMediaPath = "C:\Users\$currentUser\Desktop\windows-auto-video-play-main\CloseMedia.bat"
 $closeMediaAction = New-ScheduledTaskAction -Execute $closeMediaPath
 $closeMediaTrigger = New-ScheduledTaskTrigger -Daily -At $closeMediaTime
 Register-ScheduledTask -Action $closeMediaAction -Trigger $closeMediaTrigger -TaskName $closeMediaTaskName -Description "Task to close media player"
