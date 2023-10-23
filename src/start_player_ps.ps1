@@ -38,7 +38,7 @@ if ($mediaPlayerProcess) {
 	[System.Windows.Forms.SendKeys]::SendWait("^{t}")
 }
 
-$logPath = Join-Path $PSScriptRoot "log.txt"
+$logPath = Join-Path $PSScriptRoot ".\src\log.txt"
 Add-Content -Path $logPath -Value "Actions performed at $(Get-Date)"
 
 
