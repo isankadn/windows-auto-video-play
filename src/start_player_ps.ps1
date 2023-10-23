@@ -1,5 +1,6 @@
 # Get the first .mp4 file in the script's directory
-$mediaFile = Get-ChildItem -Path $PSScriptRoot -Filter "*.mp4" | Select-Object -First 1
+$parentFolder = Split-Path $PSScriptRoot -Parent
+$mediaFile = Get-ChildItem -Path $parentFolder -Filter "*.mp4" | Select-Object -First 1
 
 if ($mediaFile) {
     $mediaFilePath = $mediaFile.FullName
